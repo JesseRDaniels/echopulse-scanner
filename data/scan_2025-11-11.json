@@ -1,0 +1,485 @@
+{
+  "date": "2025-11-11",
+  "candidates": [
+    {
+      "ticker": "NVDA",
+      "name": "NVIDIA Corporation",
+      "price": 193.915,
+      "market_cap": 4721248567296,
+      "volume": 137204708,
+      "sector": "Technology",
+      "mentions_24h": 80,
+      "buzz_ratio": 3.99,
+      "velocity_1h": 74,
+      "platforms": [
+        "reddit"
+      ],
+      "catalyst": "Earnings Report",
+      "catalyst_date": "2025-11-18",
+      "rumor": "Market expects positive guidance",
+      "rumor_confidence": 2,
+      "sources": [
+        "https://finance.yahoo.com/calendar/earnings"
+      ],
+      "fundamentals": {
+        "revenue_growing": true,
+        "profitable": true,
+        "path_to_profit": true,
+        "red_flags": false,
+        "debt_manageable": true,
+        "dilution_ok": true
+      },
+      "health_score": 5
+    },
+    {
+      "ticker": "AMD",
+      "name": "Advanced Micro Devices, Inc.",
+      "price": 239.79,
+      "market_cap": 390396248064,
+      "volume": 47330088,
+      "sector": "Technology",
+      "mentions_24h": 370,
+      "buzz_ratio": 1.59,
+      "velocity_1h": 17,
+      "platforms": [
+        "reddit"
+      ],
+      "catalyst": "Earnings Report",
+      "catalyst_date": "2025-11-18",
+      "rumor": "Market expects positive guidance",
+      "rumor_confidence": 2,
+      "sources": [
+        "https://finance.yahoo.com/calendar/earnings"
+      ],
+      "fundamentals": {
+        "revenue_growing": true,
+        "profitable": true,
+        "path_to_profit": true,
+        "red_flags": false,
+        "debt_manageable": true,
+        "dilution_ok": true
+      },
+      "health_score": 5
+    },
+    {
+      "ticker": "TSLA",
+      "name": "Tesla, Inc.",
+      "price": 436.58,
+      "market_cap": 1451986124800,
+      "volume": 48636490,
+      "sector": "Consumer Cyclical",
+      "mentions_24h": 449,
+      "buzz_ratio": 3.53,
+      "velocity_1h": 19,
+      "platforms": [
+        "reddit"
+      ],
+      "catalyst": "Earnings Report",
+      "catalyst_date": "2025-11-18",
+      "rumor": "Market expects positive guidance",
+      "rumor_confidence": 2,
+      "sources": [
+        "https://finance.yahoo.com/calendar/earnings"
+      ],
+      "fundamentals": {
+        "revenue_growing": true,
+        "profitable": true,
+        "path_to_profit": true,
+        "red_flags": false,
+        "debt_manageable": true,
+        "dilution_ok": true
+      },
+      "health_score": 5
+    },
+    {
+      "ticker": "PLTR",
+      "name": "Palantir Technologies Inc.",
+      "price": 191.3,
+      "market_cap": 455951384576,
+      "volume": 40410209,
+      "sector": "Technology",
+      "mentions_24h": 34,
+      "buzz_ratio": 0.85,
+      "velocity_1h": 37,
+      "platforms": [
+        "reddit"
+      ],
+      "catalyst": "Earnings Report",
+      "catalyst_date": "2025-11-18",
+      "rumor": "Market expects positive guidance",
+      "rumor_confidence": 2,
+      "sources": [
+        "https://finance.yahoo.com/calendar/earnings"
+      ],
+      "fundamentals": {
+        "revenue_growing": true,
+        "profitable": true,
+        "path_to_profit": true,
+        "red_flags": false,
+        "debt_manageable": true,
+        "dilution_ok": true
+      },
+      "health_score": 5
+    },
+    {
+      "ticker": "SNOW",
+      "name": "Snowflake Inc.",
+      "price": 271.7481,
+      "market_cap": 92068257792,
+      "volume": 1753187,
+      "sector": "Technology",
+      "mentions_24h": 248,
+      "buzz_ratio": 3.66,
+      "velocity_1h": 10,
+      "platforms": [
+        "reddit"
+      ],
+      "catalyst": "Earnings Report",
+      "catalyst_date": "2025-11-18",
+      "rumor": "Market expects positive guidance",
+      "rumor_confidence": 2,
+      "sources": [
+        "https://finance.yahoo.com/calendar/earnings"
+      ],
+      "fundamentals": {
+        "revenue_growing": true,
+        "profitable": false,
+        "path_to_profit": false,
+        "red_flags": false,
+        "debt_manageable": true,
+        "dilution_ok": true
+      },
+      "health_score": 3
+    },
+    {
+      "ticker": "DDOG",
+      "name": "Datadog, Inc.",
+      "price": 196.97,
+      "market_cap": 69071618048,
+      "volume": 3073679,
+      "sector": "Technology",
+      "mentions_24h": 301,
+      "buzz_ratio": 1.45,
+      "velocity_1h": 90,
+      "platforms": [
+        "reddit"
+      ],
+      "catalyst": "Earnings Report",
+      "catalyst_date": "2025-11-18",
+      "rumor": "Market expects positive guidance",
+      "rumor_confidence": 2,
+      "sources": [
+        "https://finance.yahoo.com/calendar/earnings"
+      ],
+      "fundamentals": {
+        "revenue_growing": true,
+        "profitable": true,
+        "path_to_profit": true,
+        "red_flags": false,
+        "debt_manageable": true,
+        "dilution_ok": true
+      },
+      "health_score": 5
+    },
+    {
+      "ticker": "GME",
+      "name": "GameStop Corp.",
+      "price": 21.515,
+      "market_cap": 9636755456,
+      "volume": 1940804,
+      "sector": "Consumer Cyclical",
+      "mentions_24h": 233,
+      "buzz_ratio": 2.49,
+      "velocity_1h": 13,
+      "platforms": [
+        "reddit"
+      ],
+      "catalyst": "Earnings Report",
+      "catalyst_date": "2025-11-18",
+      "rumor": "Market expects positive guidance",
+      "rumor_confidence": 2,
+      "sources": [
+        "https://finance.yahoo.com/calendar/earnings"
+      ],
+      "fundamentals": {
+        "revenue_growing": true,
+        "profitable": true,
+        "path_to_profit": true,
+        "red_flags": false,
+        "debt_manageable": true,
+        "dilution_ok": true
+      },
+      "health_score": 5
+    },
+    {
+      "ticker": "AMC",
+      "name": "AMC Entertainment Holdings, Inc.",
+      "price": 2.445,
+      "market_cap": 1254146944,
+      "volume": 8888397,
+      "sector": "Communication Services",
+      "mentions_24h": 88,
+      "buzz_ratio": 1.42,
+      "velocity_1h": 61,
+      "platforms": [
+        "reddit"
+      ],
+      "catalyst": "Earnings Report",
+      "catalyst_date": "2025-11-18",
+      "rumor": "Market expects positive guidance",
+      "rumor_confidence": 2,
+      "sources": [
+        "https://finance.yahoo.com/calendar/earnings"
+      ],
+      "fundamentals": {
+        "revenue_growing": false,
+        "profitable": false,
+        "path_to_profit": true,
+        "red_flags": false,
+        "debt_manageable": true,
+        "dilution_ok": true
+      },
+      "health_score": 3
+    },
+    {
+      "ticker": "BBBY",
+      "name": "Bed Bath & Beyond, Inc.",
+      "price": 7.055,
+      "market_cap": 485705536,
+      "volume": 527667,
+      "sector": "Unknown",
+      "mentions_24h": 458,
+      "buzz_ratio": 2.27,
+      "velocity_1h": 58,
+      "platforms": [
+        "reddit"
+      ],
+      "catalyst": "Earnings Report",
+      "catalyst_date": "2025-11-18",
+      "rumor": "Market expects positive guidance",
+      "rumor_confidence": 2,
+      "sources": [
+        "https://finance.yahoo.com/calendar/earnings"
+      ],
+      "fundamentals": {
+        "revenue_growing": false,
+        "profitable": false,
+        "path_to_profit": false,
+        "red_flags": false,
+        "debt_manageable": true,
+        "dilution_ok": true
+      },
+      "health_score": 2
+    },
+    {
+      "ticker": "RDDT",
+      "name": "Reddit, Inc.",
+      "price": 209.38,
+      "market_cap": 39676624896,
+      "volume": 2844851,
+      "sector": "Communication Services",
+      "mentions_24h": 250,
+      "buzz_ratio": 2.54,
+      "velocity_1h": 49,
+      "platforms": [
+        "reddit"
+      ],
+      "catalyst": "Earnings Report",
+      "catalyst_date": "2025-11-18",
+      "rumor": "Market expects positive guidance",
+      "rumor_confidence": 2,
+      "sources": [
+        "https://finance.yahoo.com/calendar/earnings"
+      ],
+      "fundamentals": {
+        "revenue_growing": true,
+        "profitable": true,
+        "path_to_profit": true,
+        "red_flags": false,
+        "debt_manageable": true,
+        "dilution_ok": true
+      },
+      "health_score": 5
+    },
+    {
+      "ticker": "SOFI",
+      "name": "SoFi Technologies, Inc.",
+      "price": 30.67,
+      "market_cap": 36985049088,
+      "volume": 52480529,
+      "sector": "Financial Services",
+      "mentions_24h": 182,
+      "buzz_ratio": 1.45,
+      "velocity_1h": 83,
+      "platforms": [
+        "reddit"
+      ],
+      "catalyst": "Earnings Report",
+      "catalyst_date": "2025-11-18",
+      "rumor": "Market expects positive guidance",
+      "rumor_confidence": 2,
+      "sources": [
+        "https://finance.yahoo.com/calendar/earnings"
+      ],
+      "fundamentals": {
+        "revenue_growing": true,
+        "profitable": true,
+        "path_to_profit": true,
+        "red_flags": false,
+        "debt_manageable": true,
+        "dilution_ok": true
+      },
+      "health_score": 5
+    },
+    {
+      "ticker": "HOOD",
+      "name": "Robinhood Markets, Inc.",
+      "price": 132.03,
+      "market_cap": 118719905792,
+      "volume": 13591150,
+      "sector": "Financial Services",
+      "mentions_24h": 103,
+      "buzz_ratio": 2.24,
+      "velocity_1h": 25,
+      "platforms": [
+        "reddit"
+      ],
+      "catalyst": "Earnings Report",
+      "catalyst_date": "2025-11-18",
+      "rumor": "Market expects positive guidance",
+      "rumor_confidence": 2,
+      "sources": [
+        "https://finance.yahoo.com/calendar/earnings"
+      ],
+      "fundamentals": {
+        "revenue_growing": true,
+        "profitable": true,
+        "path_to_profit": true,
+        "red_flags": false,
+        "debt_manageable": true,
+        "dilution_ok": true
+      },
+      "health_score": 5
+    },
+    {
+      "ticker": "COIN",
+      "name": "Coinbase Global, Inc.",
+      "price": 307.27,
+      "market_cap": 82853453824,
+      "volume": 4589562,
+      "sector": "Financial Services",
+      "mentions_24h": 139,
+      "buzz_ratio": 2.68,
+      "velocity_1h": 16,
+      "platforms": [
+        "reddit"
+      ],
+      "catalyst": "Earnings Report",
+      "catalyst_date": "2025-11-18",
+      "rumor": "Market expects positive guidance",
+      "rumor_confidence": 2,
+      "sources": [
+        "https://finance.yahoo.com/calendar/earnings"
+      ],
+      "fundamentals": {
+        "revenue_growing": true,
+        "profitable": true,
+        "path_to_profit": true,
+        "red_flags": false,
+        "debt_manageable": true,
+        "dilution_ok": true
+      },
+      "health_score": 5
+    },
+    {
+      "ticker": "RBLX",
+      "name": "Roblox Corporation",
+      "price": 105.15,
+      "market_cap": 73807470592,
+      "volume": 2169837,
+      "sector": "Communication Services",
+      "mentions_24h": 279,
+      "buzz_ratio": 2.21,
+      "velocity_1h": 16,
+      "platforms": [
+        "reddit"
+      ],
+      "catalyst": "Earnings Report",
+      "catalyst_date": "2025-11-18",
+      "rumor": "Market expects positive guidance",
+      "rumor_confidence": 2,
+      "sources": [
+        "https://finance.yahoo.com/calendar/earnings"
+      ],
+      "fundamentals": {
+        "revenue_growing": true,
+        "profitable": false,
+        "path_to_profit": false,
+        "red_flags": true,
+        "debt_manageable": false,
+        "dilution_ok": true
+      },
+      "health_score": 1
+    },
+    {
+      "ticker": "ARM",
+      "name": "Arm Holdings plc",
+      "price": 149.11,
+      "market_cap": 158205493248,
+      "volume": 2808244,
+      "sector": "Technology",
+      "mentions_24h": 228,
+      "buzz_ratio": 2.54,
+      "velocity_1h": 67,
+      "platforms": [
+        "reddit"
+      ],
+      "catalyst": "Earnings Report",
+      "catalyst_date": "2025-11-18",
+      "rumor": "Market expects positive guidance",
+      "rumor_confidence": 2,
+      "sources": [
+        "https://finance.yahoo.com/calendar/earnings"
+      ],
+      "fundamentals": {
+        "revenue_growing": true,
+        "profitable": true,
+        "path_to_profit": true,
+        "red_flags": false,
+        "debt_manageable": true,
+        "dilution_ok": true
+      },
+      "health_score": 5
+    },
+    {
+      "ticker": "INSTACART",
+      "name": "INSTACART",
+      "price": 0,
+      "market_cap": 0,
+      "volume": 0,
+      "sector": "Unknown",
+      "mentions_24h": 487,
+      "buzz_ratio": 3.74,
+      "velocity_1h": 37,
+      "platforms": [
+        "reddit"
+      ],
+      "catalyst": "Earnings Report",
+      "catalyst_date": "2025-11-18",
+      "rumor": "Market expects positive guidance",
+      "rumor_confidence": 2,
+      "sources": [
+        "https://finance.yahoo.com/calendar/earnings"
+      ],
+      "fundamentals": {
+        "revenue_growing": false,
+        "profitable": false,
+        "path_to_profit": false,
+        "red_flags": false,
+        "debt_manageable": true,
+        "dilution_ok": true
+      },
+      "health_score": 2
+    }
+  ]
+}
