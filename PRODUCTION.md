@@ -19,6 +19,10 @@ Phase 3 testing revealed that **automated scanning without MCP verification has 
 
 **Step 1: Ask Claude to Run Scan**
 ```
+You: "trun echopulse scan"
+```
+or
+```
 You: "Run ECHOPULSE scan for today"
 ```
 

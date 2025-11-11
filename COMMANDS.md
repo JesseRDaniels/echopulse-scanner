@@ -8,6 +8,10 @@ Simple commands to run ECHOPULSE with Claude Code.
 
 ### Standard Morning Scan
 ```
+trun echopulse scan
+```
+or
+```
 Run ECHOPULSE scan
 ```
 or
