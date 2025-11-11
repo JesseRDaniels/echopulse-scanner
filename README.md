@@ -206,17 +206,17 @@ Set in Railway dashboard → Variables
 
 ## Roadmap
 
-### ✅ Phase 1: Manual MVP (TODAY)
+### ✅ Phase 1: Manual MVP (COMPLETE)
 - Web app deployment
 - Manual data upload
 - ECHOPULSE analysis
 - Brief generation
 
-### 🚧 Phase 2: Automation (THIS WEEK)
-- Automated data collection (yfinance, ApeWisdom, etc.)
-- Scheduled 8 AM EST runs
-- Real API integrations
-- Trade tracking system
+### ✅ Phase 2: Automation (COMPLETE)
+- Automated data collection (yfinance, Reddit/PRAW)
+- Scheduled 8 AM EST runs (GitHub Actions)
+- Real API integrations with fundamentals
+- Trade tracking system with P&L
 
 ### 📅 Phase 3: Enhancement (NEXT 2 WEEKS)
 - Tavily MCP integration for rumor verification
