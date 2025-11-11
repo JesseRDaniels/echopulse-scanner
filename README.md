@@ -18,6 +18,33 @@ Railway-deployed stock scanner for short-term rumor trading opportunities.
 
 ---
 
+## 🚀 Production Usage (Recommended)
+
+**ECHOPULSE runs best when executed by Claude Code with MCP access.**
+
+### Daily Morning Routine
+
+Simply ask Claude:
+```
+"Run ECHOPULSE scan for today"
+```
+
+Claude will automatically:
+1. ✅ Collect real stock data (yfinance, Reddit buzz, fundamentals)
+2. ✅ Verify catalysts with Tavily MCP (real earnings dates, historical patterns)
+3. ✅ Analyze quality with Sequential Thinking MCP (0-100 score, 1-3 star confidence)
+4. ✅ Match patterns with Memory MCP (learn from historical setups)
+5. ✅ Filter false positives (stocks with past earnings, invalid catalysts)
+6. ✅ Generate MCP-enhanced brief with evidence-based recommendations
+
+**Why Manual with Claude Code?**
+
+Phase 3 testing showed automated scanning without MCP verification has **66% false positive rate**. MCP intelligence is critical for accuracy.
+
+See [PRODUCTION.md](PRODUCTION.md) for complete usage guide.
+
+---
+
 ## Quick Start (Local Testing)
 
 ### 1. Install Dependencies
