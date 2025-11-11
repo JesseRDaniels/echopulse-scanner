@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECHOPULSE v3.0 - Stock Scanner</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #0a0e27;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .subtitle {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .card {
+            background: #1a1f3a;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            border: 1px solid #2a2f4a;
+        }
+
+        .card h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .brief-content {
+            background: #0f1220;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+            white-space: pre-wrap;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            line-height: 1.8;
+            max-height: 600px;
+            overflow-y: auto;
+        }
+
+        .brief-content::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .brief-content::-webkit-scrollbar-track {
+            background: #1a1f3a;
+        }
+
+        .brief-content::-webkit-scrollbar-thumb {
+            background: #667eea;
+            border-radius: 4px;
+        }
+
+        .upload-section {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+            align-items: center;
+        }
+
+        input[type="file"] {
+            flex: 1;
+            padding: 12px;
+            background: #0f1220;
+            border: 2px solid #2a2f4a;
+            border-radius: 5px;
+            color: #e0e0e0;
+            cursor: pointer;
+        }
+
+        button {
+            padding: 12px 25px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: bold;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        .status {
+            padding: 12px;
+            border-radius: 5px;
+            margin-top: 10px;
+            display: none;
+        }
+
+        .status.success {
+            background: #10b981;
+            color: white;
+        }
+
+        .status.error {
+            background: #ef4444;
+            color: white;
+        }
+
+        .info-box {
+            background: #2a2f4a;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            border-left: 4px solid #10b981;
+        }
+
+        .info-box h3 {
+            color: #10b981;
+            margin-bottom: 8px;
+        }
+
+        a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .loading.active {
+            display: block;
+        }
+
+        .spinner {
+            border: 4px solid #2a2f4a;
+            border-top: 4px solid #667eea;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .no-brief {
+            text-align: center;
+            padding: 40px;
+            color: #888;
+        }
+
+        .no-brief p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📊 ECHOPULSE v3.0</h1>
+            <p class="subtitle">Personal Rumor Trading Scanner | Railway Edition</p>
+        </header>
+
+        <div class="card">
+            <h2>🚀 Upload Data & Analyze</h2>
+
+            <div class="info-box">
+                <h3>Phase 1 Manual MVP</h3>
+                <p><strong>Today:</strong> {{ today }}</p>
+                <p>Upload a JSON file with stock data, or <a href="/api/sample-data" target="_blank">download sample data template</a>.</p>
+            </div>
+
+            <div class="upload-section">
+                <input type="file" id="fileInput" accept=".json" />
+                <button onclick="uploadFile()">📤 Upload & Analyze</button>
+                <button onclick="getSampleData()">📋 Get Sample</button>
+            </div>
+
+            <div id="status" class="status"></div>
+            <div id="loading" class="loading">
+                <div class="spinner"></div>
+                <p>Analyzing data...</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>📈 Latest Brief</h2>
+
+            {% if brief_content %}
+                <p style="margin-bottom: 15px; color: #10b981;">
+                    ✅ <strong>{{ latest_brief }}</strong>
+                </p>
+                <div class="brief-content">{{ brief_content }}</div>
+            {% else %}
+                <div class="no-brief">
+                    <p>📭 No brief generated yet</p>
+                    <p>Upload data above to generate your first ECHOPULSE morning brief!</p>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+
+    <script>
+        async function uploadFile() {
+            const fileInput = document.getElementById('fileInput');
+            const file = fileInput.files[0];
+
+            if (!file) {
+                showStatus('Please select a file first', 'error');
+                return;
+            }
+
+            const formData = new FormData();
+            formData.append('file', file);
+
+            showLoading(true);
+            hideStatus();
+
+            try {
+                const response = await fetch('/api/upload', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const result = await response.json();
+
+                if (result.status === 'success') {
+                    showStatus('✅ Analysis complete! Refreshing...', 'success');
+                    setTimeout(() => window.location.reload(), 1500);
+                } else {
+                    showStatus('❌ Error: ' + result.message, 'error');
+                }
+            } catch (error) {
+                showStatus('❌ Upload failed: ' + error.message, 'error');
+            } finally {
+                showLoading(false);
+            }
+        }
+
+        async function getSampleData() {
+            try {
+                const response = await fetch('/api/sample-data');
+                const data = await response.json();
+
+                const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+                const url = window.URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'sample_data.json';
+                a.click();
+
+                showStatus('✅ Sample data downloaded!', 'success');
+            } catch (error) {
+                showStatus('❌ Failed to get sample data: ' + error.message, 'error');
+            }
+        }
+
+        function showStatus(message, type) {
+            const status = document.getElementById('status');
+            status.textContent = message;
+            status.className = 'status ' + type;
+            status.style.display = 'block';
+        }
+
+        function hideStatus() {
+            document.getElementById('status').style.display = 'none';
+        }
+
+        function showLoading(show) {
+            const loading = document.getElementById('loading');
+            if (show) {
+                loading.classList.add('active');
+            } else {
+                loading.classList.remove('active');
+            }
+        }
+    </script>
+</body>
+</html>
